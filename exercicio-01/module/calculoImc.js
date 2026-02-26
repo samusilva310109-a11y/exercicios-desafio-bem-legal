@@ -23,5 +23,21 @@ const validarDados = (peso, altura)=>{
 
 const definirStatus = (imc)=>{
     if(imc < 18.5)
-        'Abaixo do peso'
+        return 'Abaixo do peso'
+    else if(imc < 25)
+        return 'Peso normal'
+    else if(imc < 30)
+        return 'Acima do peso (sobrepeso)'
+    else if (imc < 35)
+        return 'Obesida I'
+    else if (imc < 40)
+        return 'Obesidade II'
+    else if(imc >= 40)
+        return 'Obesidade III'
 }
+
+// let imc = calcularIMC(45, 1.60)
+let statusIMC = definirStatus(34.9)
+
+// console.log(imc)
+console.log(statusIMC)
