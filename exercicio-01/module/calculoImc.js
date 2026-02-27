@@ -36,8 +36,8 @@ const definirStatus = (imc)=>{
         return 'Obesidade III'
 }
 
-// let imc = calcularIMC(45, 1.60)
-let statusIMC = definirStatus(34.9)
-
-// console.log(imc)
-console.log(statusIMC)
+module.exports = {
+    calcularIMC,
+    definirStatus,
+    validarDados
+}
