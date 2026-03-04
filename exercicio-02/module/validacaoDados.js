@@ -5,13 +5,6 @@
  * Versão: 1.0
  */
 
-module.exports = {
-    validarNomes, 
-    validarNotas,
-    validarSexos, 
-    definirSituacaoAluno,
-    definirSituacaoAposExame
-}
 
 const validarNotas = (num1, num2, num3, num4) =>{
     if(num1 == '' || num2 == '' || num3 == '' || num4 == '')
@@ -62,6 +55,15 @@ const validarSexos = (sexo) => {
     else
         return false
 }
+
+module.exports = {
+    validarNomes, 
+    validarNotas,
+    validarSexos, 
+    definirSituacaoAluno,
+    definirSituacaoAposExame
+}
+
 
 // let sexo = validarSexos('feminino') <- aprovado
 // let staus = definirSituacaoAluno(70) <- aprovado

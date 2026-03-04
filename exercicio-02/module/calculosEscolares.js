@@ -6,10 +6,7 @@
  */
 
 
-module.exports ={
-    calcularMedia,
-    calcularNotaFinal
-}
+
 const calcularMedia = (nota1, nota2, nota3, nota4)=>{
     let somaNotas = Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)
     let media = somaNotas / 4
@@ -19,6 +16,11 @@ const calcularMedia = (nota1, nota2, nota3, nota4)=>{
 const calcularNotaFinal = (media, notaExam)=>{
     let notaFinal = Number(media) + Number(notaExam)
     return notaFinal
+}
+
+module.exports ={
+    calcularMedia,
+    calcularNotaFinal
 }
 
 // let media = calcularMedia(100, 89, 90, 0) <- aprovados
