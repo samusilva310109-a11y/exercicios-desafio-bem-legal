@@ -5,6 +5,7 @@
  * Versão: 1.0
  */
 
+
 const validarNotas = (num1, num2, num3, num4) =>{
     if(num1 == '' || num2 == '' || num3 == '' || num4 == '')
         return false
@@ -54,6 +55,24 @@ const validarSexos = (sexo) => {
     else
         return false
 }
+
+module.exports = {
+    validarNomes, 
+    validarNotas,
+    validarSexos, 
+    definirSituacaoAluno,
+    definirSituacaoAposExame
+}
+
+
+module.exports = {
+    validarNomes, 
+    validarNotas,
+    validarSexos, 
+    definirSituacaoAluno,
+    definirSituacaoAposExame
+}
+
 
 
 module.exports = {
