@@ -21,7 +21,8 @@ entradaDeDados.question('Insira um número: ', (fatorial)=>{
 
     if(validarFatorial){
         let  resultado = calculoFatorial.calcularFatorial(valorFatorial)
-        console.log(resultado)
+        console.log(`O fatorial de ${valorFatorial} é ${resultado}`)
+        entradaDeDados.close()
     }else{
         console.log('ERRO: DEVE-SE APENAS INSERIR NÚMEROS MAIORES QUE 1.')
     }
