@@ -24,3 +24,7 @@ const validarNumeros = (numInicial, numFinal) => {
     else
         return true
 }
+
+module.exports = {
+    validarNumeros
+}
