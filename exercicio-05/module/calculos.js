@@ -1,3 +1,12 @@
+/************************************************************
+ * Objetivo: Arquivo responsável por armazenar funções para 
+ * verificar números pares e printa-los na interface
+ * Autor: Samuel Silva Moreira Dos Santos
+ * 
+ * Data de inicío: 05/03/2026
+ * Versão: 1.0
+ ***********************************************************/
+
 const calcPares = (numInicial, numFinal) => {
     console.log('Lista de números pares: ')
     let contPares = 0
