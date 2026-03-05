@@ -33,7 +33,6 @@ const formarTabuadas = (tabudaInicial, tabudaFinal, numInicial, numFinal)=>{
 }
 
 module.exports = {
-    calcularTabuada,
     formarTabuadas
 }
 // let testeTabuada = calcularTabuada(2, 2, 12) <- funcionado

@@ -1,5 +1,5 @@
 /************************************************************
- * Objetivo: Arquivo responsável por armazenar funções de calculo
+ * Objetivo: Arquivo responsável por armazenar funções de cálculo
  * fatorial
  * Autor: Samuel Silva Moreira Dos Santos
  * 
@@ -17,4 +17,8 @@ const calcularFatorial = (valor)=>{
     return fator
 }
 
-let teste = calcularFatorial(5)
+module.exports = {
+    calcularFatorial
+}
+
+// let teste = calcularFatorial(5) <- aprovado

@@ -63,25 +63,6 @@ module.exports = {
     definirSituacaoAluno,
     definirSituacaoAposExame
 }
-
-
-module.exports = {
-    validarNomes, 
-    validarNotas,
-    validarSexos, 
-    definirSituacaoAluno,
-    definirSituacaoAposExame
-}
-
-
-
-module.exports = {
-    validarNomes, 
-    validarNotas,
-    validarSexos, 
-    definirSituacaoAluno,
-    definirSituacaoAposExame
-}
 // let sexo = validarSexos('feminino') <- aprovado
 // let staus = definirSituacaoAluno(70) <- aprovado
 // let nota = validarNotas(100, 90, 89, 0) <-aprovado
