@@ -51,10 +51,34 @@ entradaDeDados.question('Insira o nome do professor: ', (nomePr) => {
                                         let valSexoAluno = validacaoDados.validarSexos(sexoAluno)
                                         let valSexoProf = validacaoDados.validarSexos(sexoProf)
 
+                                        //realizando cálculos
+                                        let media = calculosEscolares.calcularMedia(primeiraNota, segundaNota, terceiraNota, quartaNota)
+
+                                        //definindo situação do aluno
+                                        let situacaoAluno = validacaoDados.definirSituacaoAluno()
+
+                                        
                                         if (nomes) {
                                             if (valSexoAluno && valSexoProf) {
                                                 if (notas) {
-                                                    entradaDeDados.close()
+                                                    if (sexoAluno === 'MASCULINO' && sexoProf === 'MASCULINO') {
+                                                        console.log("O aluno [ xxxxxx ] foi [aprovado] na disciplina [ xxxxxxxx ].\nCurso: xxxxxxxx\nProfessor: xxxxxxxx\nNotas do aluno: Nota1, Nota2, Nota3, Nota4, Nota do Exame\nMédia Final: xxxxxx")
+                                                        entradaDeDados.close()
+                                                        
+                                                        if(situacaoAluno == 'Em recuperação'){
+                                                            entradaDeDados.question('Insira o ')
+                                                        }
+                                                    } else if (sexoAluno === 'FEMININO' && sexoProf === 'FEMININO') {
+                                                        console.log("O aluno [ xxxxxx ] foi [aprovado] na disciplina [ xxxxxxxx ].\nCurso: xxxxxxxx\nProfessor: xxxxxxxx\nNotas do aluno: Nota1, Nota2, Nota3, Nota4, Nota do Exame\nMédia Final: xxxxxx")
+                                                        entradaDeDados.close()
+                                                    } else if (sexoAluno === 'MASCULINO' && sexoProf === 'FEMININO') {
+                                                        console.log("O aluno [ xxxxxx ] foi [aprovado] na disciplina [ xxxxxxxx ].\nCurso: xxxxxxxx\nProfessor: xxxxxxxx\nNotas do aluno: Nota1, Nota2, Nota3, Nota4, Nota do Exame\nMédia Final: xxxxxx")
+                                                        entradaDeDados.close()
+                                                    } else if (sexoAluno === 'FEMININO' && sexoProf === 'MASCULINO') {
+                                                        console.log("O aluno [ xxxxxx ] foi [aprovado] na disciplina [ xxxxxxxx ].\nCurso: xxxxxxxx\nProfessor: xxxxxxxx\nNotas do aluno: Nota1, Nota2, Nota3, Nota4, Nota do Exame\nMédia Final: xxxxxx")
+                                                        entradaDeDados.close()
+                                                    }
+
                                                 } else {
                                                     console.log('ERRO: CAMPO DAS NOTAS DEVEM SEREM PREENCHIDOS COM NÚMEROS DE 0 A 100!!')
                                                     entradaDeDados.close()
